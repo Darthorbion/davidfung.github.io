@@ -6,7 +6,7 @@
 
 body {
 /*  background: #fffbee; */
-	background: linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../media/bumper_loop.gif);
+	background: linear-gradient(0deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(../media/bumper_loop.gif), url(../media/bumper_red.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -113,13 +113,6 @@ a:hover {
 
 
 @media screen and (max-width: 768px) {
-	body {
-		background: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(../media/bumper_loop.gif);
-		background-repeat: no-repeat;
-			background-position: center center;
-		background-size: cover;
-
-	}
 	.buttonContainer {
 		display: inline-block;
 		top: 45%;
