@@ -399,6 +399,7 @@ fieldset {
 	#contact button[type="submit"] {
 		padding: 2vw;
 		font-size: 5vw;
+		border-radius: 1vw;
 	}
 	fieldset {
 		margin: 0 0 3vh;
