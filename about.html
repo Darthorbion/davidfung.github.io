@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>About - David Fung</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="David Fung">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="totop.js"></script>
+</head>
+
+<body>
+<div id="scrollTop" class="wrapper">
+
+  <script> //Smooth scroll to anchor
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
+  </script>
+
+  <div class="navContainer">
+    <div class="name"><a href="index.html">David Fung</a></div>
+    <div class="space01"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>  
+    </div>
+
+    <script>
+    $(function(){     //Current page highlight on nav
+      $('a').each(function() {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current');
+        }
+      });
+    });
+    </script>
+  </div>
+
+  <a href="#scrollTop" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+  <div class="mainContainer">
+    <hr>
+    <h1>My Story</h1>
+    <img class="face" src="media/profile_image.jpg" alt="David Fung">
+    
+    <p></br>I'm a recent graduate with a Bachelor in Design Innovation at Victoria University, majoring in Media Design. My passion and interests lies with web design and development, as well as graphic design and animation. I want to learn and discover more within these fields and other aspects of digital design. In the age of internet, it allows us to discover all sorts of work from around the world through many cultures and time periods.</p>
+
+    <p>Throughout the years, I was always enjoyed visual learning and communication through arts, crafts, and design. The more I learnt about visual design and the digital world, the more I became interested. The vast opportunities presented through digital media reinforced my passion for what I wanted to do. I took the opportunity to study design and I couldn't be happier for what I've learnt, and things I've created along the way.</p>
+
+    <p>The next major step for me is to get experience in the industry and gain practical skills through real world applications. My focus is learning more about the critical skills needed for web design and development but also other fields such as graphic design, animation and game design.</p>
+
+    <p>Outside of design and the internet, I enjoy spending time driving, going to the gym and enjoying music whenever I can.</p>
+
+  </div>
+
+  <script>
+    $(document).ready(function() {   //Simulate smooth loading
+        setTimeout(function() {
+            $('.mainContainer').addClass('mainContainer-loaded');
+        }, 100);
+    });
+  </script>
+
+  <div class="footer">
+    <p>© 2018 David Fung @ Design</p>
+    <a href="https://www.linkedin.com/in/david-fung-541985bb" class="fa fa-linkedin" target="_blank"></a>
+    <a href="https://www.flickr.com/people/133981546@N02/" class="fa fa-flickr" target="_blank"></a>
+    <a href="https://vimeo.com/user71748540" class="fa fa-vimeo" target="_blank"></a>
+    <a href="#" class="fa fa-rss" target="_blank"></a>
+  </div>
+
+
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+  
+</body>
+</html>

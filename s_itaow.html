@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>I.T.A.O.W. - David Fung</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="David Fung">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <script src="totop.js"></script>
+</head>
+
+<body>
+<div id="scrollTop" class="wrapper">
+  
+  <script> //Smooth scroll to anchor
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
+  </script>
+
+  <div class="navContainer">
+    <div class="name"><a href="index.html">David Fung</a></div>
+    <div class="space01"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>  
+    </div>
+
+    <script>
+    $(function(){     //Current page highlight on nav
+      $('a').each(function() {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current');
+        }
+      });
+    });
+    </script>
+  </div>
+
+  <a href="#scrollTop" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+  <div class="workContainer">
+    <hr>
+    <h1>In The Art Of Wellington</h1>
+    <div class="scalable scalable-16-9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jsOmn5TgUOw?rel=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    </br>
+
+    <h2><i>A New Face.</i></h2>
+    <p><strong>In The Art Of Wellington</strong> is an augmented reality concept sprouted from the idea to make static street art come to life and last longer through digital means. I is a way for people become more appreciative and connected with local and international artists who spend tireless hours creating amazing work to make our Wellington beautiful.</p>
+
+    </br>
+    </br>
+    <div class="pagePrevious"><a href="s_infinite.html">Previous</a></div>
+    <div class="pageNext"><a href="s_intro.html">Next</a></div>
+
+  </div>
+
+  <script>
+    $(document).ready(function() {   //Simulate smooth loading
+        setTimeout(function() {
+            $('.workContainer').addClass('workContainer-loaded');
+        }, 100);
+    });
+  </script>
+
+  <div class="footer">
+    <p>© 2018 David Fung @ Design</p>
+    <a href="https://www.linkedin.com/in/david-fung-541985bb" class="fa fa-linkedin" target="_blank"></a>
+    <a href="https://www.flickr.com/people/133981546@N02/" class="fa fa-flickr" target="_blank"></a>
+    <a href="https://vimeo.com/user71748540" class="fa fa-vimeo" target="_blank"></a>
+    <a href="#" class="fa fa-rss" target="_blank"></a>
+  </div>
+
+
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+  
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Contact - David Fung</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="David Fung">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/contact.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="totop.js"></script>
+</head>
+
+<body>
+<div id="scrollTop" class="wrapper">
+
+  <script> //Smooth scroll to anchor
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
+  </script>
+
+  <div class="navContainer">
+    <div class="name"><a href="index.html">David Fung</a></div>
+    <div class="space01"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>  
+    </div>
+
+    <script>
+    $(function(){     //Current page highlight on nav
+      $('a').each(function() {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current');
+        }
+      });
+    });
+    </script>
+  </div>
+
+  <a href="#scrollTop" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+  <div class="contactContainer">
+    <hr>
+    <h1>Get in touch</h1>
+
+    <form id="contact" action="mailto:davidfungiv@hotmail.com" method="post" enctype="text/plain">
+      <fieldset>
+        <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Email address" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Subject" type="text" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="4" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+
+    <script>
+      $(document).ready(function() {   //Simulate smooth loading
+          setTimeout(function() {
+              $('.contactContainer').addClass('contactContainer-loaded');
+          }, 100);
+      });
+    </script>
+    
+  </div>
+
+  <div class="footer">
+    <p>© 2018 David Fung @ Design</p>
+    <a href="https://www.linkedin.com/in/david-fung-541985bb" class="fa fa-linkedin" target="_blank"></a>
+    <a href="https://www.flickr.com/people/133981546@N02/" class="fa fa-flickr" target="_blank"></a>
+    <a href="https://vimeo.com/user71748540" class="fa fa-vimeo" target="_blank"></a>
+    <a href="#" class="fa fa-rss" target="_blank"></a>
+  </div>
+
+</div>
+
+
+    
+
+
+
+
+
+
+  
+</body>
+</html>

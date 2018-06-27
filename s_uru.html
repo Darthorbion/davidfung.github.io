@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Uru - David Fung</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="David Fung">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+  <script src="totop.js"></script>
+</head>
+
+<body>
+<div id="scrollTop" class="wrapper">
+  
+  <script> //Smooth scroll to anchor
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+    });
+  </script>
+
+  <div class="navContainer">
+    <div class="name"><a href="index.html">David Fung</a></div>
+    <div class="space01"></div>
+    <div class="nav">
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>  
+    </div>
+
+    <script>
+    $(function(){     //Current page highlight on nav
+      $('a').each(function() {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current');
+        }
+      });
+    });
+    </script>
+  </div>
+
+  <a href="#scrollTop" id="return-to-top"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+
+  <div class="workContainer">
+    <hr>
+    <h1>Uru | Te Papa Map</h1>
+    <div class="uru_imgs"><img src="media/uru_coverfront.jpg" alt="Uru Banner"></div>
+    <p>Discover, explore and plan your trip in advance. Uru allows you to plan your next visit to your local museum or gallery and how accessible each exhibition is for your family and friends.</p>
+    <img class="uru-logo" src="media/uru_logo.png" alt="Uru Logo">
+    <p style="text-align: center;"><strong>Visit Uru</strong> | <a href="http://uru-discover.surge.sh/" target="_blank">http://uru-discover.surge.sh/</a></p>
+    
+    </br>
+    <h2>Accessibility</h2>
+    <p>Uru answers accessibility needs in local attractions such as museums and galleries for people such as tourists, casual visitors, families and children. This is done through an interactive map on our website and other information needed for accessibility planning within museums such as Te Papa.</p></br>
+    <div class="uru_imgs"><img src="media/uru_exhibitmap.png" alt="Uru Exhibit Map"></div>
+
+    </br>
+    <h2>Development</h2>
+    <p>It started off as a project challenge presented by Te Papa to create an experience which appeals to all audiences and allows more accessibility. After extensive research and testing for accessibility and mapping, it was made into a prototype and then carried on to its final form.</p></br>
+    <div class="uru_imgs"><img src="media/tepapa_concept.png" alt="Uru Initial Concept"></div>
+
+    </br>
+    <h2>Tools & Process</h2>
+    <p>The process started with by tracing an original map of Te Papa in Adobe Illustrator then exported as SVG files. To get the geo-coordinates and proper WGS84 projections, it was imported and traced in QGIS to produce the floor maps as a GeoJSON. Then using the OpenLayers API, I put the GeoJSON floor maps as a layer on the map along with the titles, descriptions and other features were added as well.</p>
+    <p><strong>QGIS</strong> is a cross-platform free and open-source desktop geographic information system (GIS) application that supports viewing, editing, and analysis of geospatial data.
+    </br>
+    <strong>OpenLayers</strong> makes dynamic mapping simple for any web page. It can display map tiles, vector data and markers loaded from any source.
+    </br>
+    <strong>OpenStreetMap</strong> is an open-source collaborative project designed to create a free and editable map of the world.</p>
+    <div class="uru_imgs"><img src="media/qgis_openlayers_opt.png" alt="QGIS and OpenLayers"></div>
+
+    <a class="pageNext" href="s_infinite.html">Next</a>
+
+  </div>
+
+  <script>
+    $(document).ready(function() {   //Simulate smooth loading
+        setTimeout(function() {
+            $('.workContainer').addClass('workContainer-loaded');
+        }, 100);
+    });
+  </script>
+
+  <div class="footer">
+    <p>© 2018 David Fung @ Design</p>
+    <a href="https://www.linkedin.com/in/david-fung-541985bb" class="fa fa-linkedin" target="_blank"></a>
+    <a href="https://www.flickr.com/people/133981546@N02/" class="fa fa-flickr" target="_blank"></a>
+    <a href="https://vimeo.com/user71748540" class="fa fa-vimeo" target="_blank"></a>
+    <a href="#" class="fa fa-rss" target="_blank"></a>
+  </div>
+
+
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+  
+</body>
+</html>
