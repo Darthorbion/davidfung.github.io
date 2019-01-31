@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /
+Sitemap: https://davidfung.co/sitemap.xml
