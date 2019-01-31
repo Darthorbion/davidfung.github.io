@@ -223,10 +223,11 @@ hr {
 img.face {
 	position: relative;
 	display: block;
-	width: 35%;
+	width: 30%;
 	margin-top: 5%;
 	margin-left: auto;
 	margin-right: auto;
+	border-radius: 100%;
 }
 
 img.uru-logo {
