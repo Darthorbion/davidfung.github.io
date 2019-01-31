@@ -1,5 +1,10 @@
-http://davidfung.netlify.com/* http://davidfung.co/:splat 301!
+https://davidfung.netlify.com/* https://davidfung.co/:splat 301!
 /projects.html /projects
 /about.html /about
 /contact.html /contact
-
+/s_uru.html /uru
+/s_infinite.html /infinite-collapse
+/s_itaow.html /itaow
+/s_intro.html /intro-bumper
+/s_angel.html /lonely-angel
+/index.html /
