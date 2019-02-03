@@ -247,7 +247,6 @@ img.uru-logo {
 	align-items: left;
 	font-size: 1.2vw;
 	font-weight: 600;
-	text-decoration: none;
 }
 
 .pageNext {
@@ -258,7 +257,16 @@ img.uru-logo {
 	align-items: right;
 	font-size: 1.2vw;
 	font-weight: 600;
-	text-decoration: none;
+}
+
+a.pageNext, a.pageNext:active, a.pagePrevious, a.pagePrevious:active {
+	text-decoration: none !important;
+	color: black;
+	outline: none;
+}
+
+a.pageNext:hover, a.pagePrevious:hover {
+	color: #ededed !important;
 }
 
 p {
