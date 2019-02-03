@@ -68,7 +68,7 @@ body {
 	text-transform: uppercase;
 	position: relative;
 	overflow: hidden;
-	transition: 0.8s;
+	transition: 0.5s;
 	font-size: 1.2vw;
 	letter-spacing: 0.3vw;
 	font-weight: 600;
@@ -79,17 +79,17 @@ body {
     background: white;
     transition: 1s;
     color: black;
-    letter-spacing: 0.6vw;
+    letter-spacing: 0.5vw;
 /*    border-radius: 999px;*/
 }
 .buttonCenter:hover:after{
     width: 100%;
     left: 0;
-    transition: 0.8s;
+    transition: 0.5s;
 }
 .buttonCenter:after {
     position: absolute;
-    transition: 0.8s;
+    transition: 0.5s;
     content: '';
     width: 0;
     left: 50%;
