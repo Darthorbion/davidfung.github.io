@@ -47,41 +47,33 @@ body {
 }
 
 .buttonContainer {
-	top: 50%;
-	height: 55vh;
-	width: 50vw;
-	display: inline-flex;
 	position: absolute;
-	align-items: center;
-	justify-content: center;
-	transform: translateX(50%);
+	top: 70%;
+	width: 100%;
+  	text-align: center;
 }
 
-/*----Center Button----*/
 .buttonCenter{
-	flex: 1 1 auto;
-/*	margin-left: 3%;
-	margin-right: 3%;*/
-	padding: 2vh 0%;
-/*	border: 3px solid #aaaaaa;*/
-	text-align: center;
-	text-transform: uppercase;
+	display: inline-block;
 	position: relative;
-	overflow: hidden;
+	padding: 1em 3em;
 	transition: 0.5s;
 	font-size: 1.2vw;
-	letter-spacing: 0.3vw;
 	font-weight: 600;
-
+	letter-spacing: 0.3vw;	
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: center;
 }
+
 .buttonCenter:hover{
     cursor: pointer;
     background: white;
     transition: 1s;
     color: black;
-    letter-spacing: 0.5vw;
-/*    border-radius: 999px;*/
+    letter-spacing: 0.4vw;
 }
+
 .buttonCenter:hover:after{
     width: 100%;
     left: 0;
@@ -114,8 +106,15 @@ a:hover {
 
 @media screen and (max-width: 768px) {
 	.buttonContainer {
-		display: inline-block;
-		top: 45%;
+		top: 60%;
+	}
+	.buttonCenter {
+		display: block;
+		margin: 0 auto;
+		width: 60%;
+	}
+	.buttonCenter:hover{
+	    letter-spacing: 2vw;
 	}
 	.title {
 		height: 55vh;
