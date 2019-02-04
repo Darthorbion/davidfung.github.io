@@ -51,7 +51,7 @@
     </div>
 
     <script>
-    $(function(){     //Current page highlight on nav
+    $(document).ready(function(){     //Current page highlight on nav
       $('a').each(function() {
         if ($(this).prop('href') == window.location.href) {
           $(this).addClass('current');
